@@ -20,7 +20,7 @@ f) API key used by me, is available in index.js
 
 To run this project,
 
-Clone the this repository in your local, using the below command In the terminal of your VScode, type, " git clone https://github.com/Kalaisgit/.git " and hit ENTER key.
+Clone the this repository in your local, using the below command In the terminal of your VScode, type, " git clone https://github.com/Kalaisgit/Filmy_Nanbas.git" and hit ENTER key.
 The repo is now available locally,
 
 To cd into the root directory of the project, type, cd "drag and drop the root folder" and hit ENTER.
