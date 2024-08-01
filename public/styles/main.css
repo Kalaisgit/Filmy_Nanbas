@@ -1,0 +1,64 @@
+body {
+  background-color: #f0e9e9; /* Light background color */
+}
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-size: 3rem; /* Adjust size as needed */
+  font-weight: 700;
+  background: linear-gradient(to right, #ff6f61, #d4a6a6); /* Gradient colors */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative; /* For positioning the underline */
+  transition: text-shadow 0.3s ease;
+}
+
+h1:hover {
+  text-shadow: 0 2px 4px rgba(245, 152, 12, 0.946); /* Optional: Subtle shadow on hover */
+}
+
+/* Underline effect */
+h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px; /* Adjust as needed */
+  width: 100%;
+  height: 3px; /* Thickness of the underline */
+  background: #ff6f61; /* Color of the underline */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+h1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background-color: #d4a6a6; /* Optional: Change color on hover if desired */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 900px; /* Adjust as needed */
+  object-fit: cover;
+}
+.carousel-container {
+  height: 1000px; /* Ensures consistent height for the carousel */
+  overflow: hidden; /* Prevents overflow */
+}
+.content-container {
+  height: 1000px; /* Matches carousel height to avoid shifting */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+p {
+  font-family: "Lato";
+  font-size: 2 rem; /* Slightly smaller font size */
+  color: #333; /* Light grey color for contrast */
+  line-height: 1.6; /* Improve readability */
+  margin: 1rem 0; /* Space around the paragraph */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+}
